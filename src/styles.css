@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.slideshow-container{
+    @apply relative max-w-full m-auto
+}
+.mySlides.fade img{
+    @apply w-full h-full;
+}
+.mySlides {
+    @apply hidden;
+}
+.numbertext{
+    @apply absolute text-gray-900 left-4 text-xl p-8 top-4;
+}
+.text {
+    @apply absolute text-blue-300 text-2xl px-32 py-12 bottom-12 mx-96 text-start font-semibold bg-neutral-500;
+}
+.prev, .next{
+    @apply absolute bottom-64 text-6xl text-gray-900 px-8 py-4 cursor-pointer w-auto font-bold hover:bg-blue-300 hover:text-white transition ease-out duration-500 select-none; 
+} 
+.next{
+    @apply right-0 rounded-l-md;
+}
+.prev {
+    @apply rounded-r-md;
+}
+.dot{
+    @apply cursor-pointer h-6 w-6 bg-white inline-block rounded-full mx-2 my-0;
+}
+.dotcircles{
+    @apply text-center absolute bottom-6 w-full;
+}
+.active, .dot:hover{
+    @apply bg-gray-800;
+}
+.btn {
+    @apply rounded-full py-2 px-3 uppercase text-sm font-bold cursor-pointer tracking-wider;
+}
+.dropdown {
+    @apply 
+    block
+    w-full
+    px-4
+    py-2
+    text-xl
+    font-normal
+    text-gray-700
+    bg-white bg-clip-padding bg-no-repeat
+    border border-solid border-gray-300
+    rounded
+    transition
+    ease-in-out
+    m-0
+    focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+}
